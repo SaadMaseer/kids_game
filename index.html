@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games Hub</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS Themes -->
+  <link rel="stylesheet" href="number.css">
+  <link rel="stylesheet" href="word.css">
+</head>
+
+<body>
+  <div id="site-nav"></div>
+
+
+  <!-- Main -->
+  <main class="flex-grow-1 py-5">
+    <div class="container text-center mb-5">
+      <h1 class="dedication">
+        To <span class="kid-name ali">Ali</span> and <span class="kid-name arai">Arai</span>
+      </h1>
+    </div>
+    <div class="container">
+
+
+
+      <!-- Game 1: Number Guessing -->
+      <section id="game1" class="mb-5 d-flex justify-content-center">
+        <div class="game">
+          <h1>Nummergissning</h1>
+          <div id="message">Tryck på <kbd>Enter</kbd> eller klicka på <strong>Start</strong> för att börja.</div>
+
+          <div class="mb-3">
+            <input id="guessInput" type="number" placeholder="Ange 1-10" min="1" max="10" step="1" autofocus />
+            <button id="guessBtn">Gissa</button>
+            <button id="startBtn">Start</button>
+          </div>
+
+          <div class="info-line mb-3">
+            <span id="rangeSpan">Område: 1-10</span> •
+            <span id="triesSpan">Försök: <strong id="triesVal">15</strong></span>
+          </div>
+
+          <img id="mascot" class="mascot" src="img/g.jpg" alt="Celebration mascot">
+
+          <!-- Sound controls -->
+          <div class="panel mt-3">
+            <div><strong>Sound</strong></div>
+            <div class="row mt-2 align-items-center">
+              <div class="col-auto">
+                <button id="muteBtn">🔊 Mute</button>
+              </div>
+              <div class="col">
+                <label for="volRange" class="form-label small">Volume</label>
+                <input id="volRange" type="range" min="0" max="1" step="0.01" value="0.4" class="form-range">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <!-- Scripts -->
+  <script src="main.js" defer></script>
+
+  <script src="includes.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

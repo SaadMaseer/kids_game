@@ -1,0 +1,182 @@
+ body {
+      background: radial-gradient(circle at center, #0d0d0d, #000);
+      color: #00ff99;
+      font-family: 'Share Tech Mono', monospace;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ===== Neon Navbar ===== */
+    .navbar-neon {
+      background: rgba(0, 0, 0, 0.85);
+      border-bottom: 2px solid #00ff99;
+      box-shadow: 0 0 12px #00ff99;
+    }
+
+    .navbar-neon .navbar-brand,
+    .navbar-neon .nav-link {
+      color: #00ff99 !important;
+      text-shadow: 0 0 6px #00ff99;
+      transition: color 0.2s, text-shadow 0.2s;
+    }
+
+    .navbar-neon .nav-link:hover,
+    .navbar-neon .navbar-brand:hover {
+      color: #ffffff !important;
+      text-shadow: 0 0 12px #00ff99, 0 0 24px #00ff99;
+    }
+
+    .navbar-toggler {
+      border-color: #00ff99;
+    }
+
+    .navbar-toggler-icon {
+      filter: drop-shadow(0 0 6px #00ff99);
+    }
+
+    /* ===== Game Card ===== */
+    .game {
+      background: rgba(0, 0, 0, 0.85);
+      border: 2px solid #00ff99;
+      border-radius: 14px;
+      padding: 2rem;
+      box-shadow: 0 0 22px #00ff99;
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .game h1 {
+      font-size: 1.8rem;
+      text-shadow: 0 0 10px #00ff99;
+      margin-bottom: 1rem;
+    }
+
+    #message {
+      min-height: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    input[type=number] {
+      padding: .6rem;
+      font-size: 1.1rem;
+      border: 2px solid #00ff99;
+      border-radius: 6px;
+      background: #111;
+      color: #00ff99;
+      text-align: center;
+      outline: none;
+      width: 120px;
+    }
+
+    input[type=number]::placeholder {
+      color: #00ff99aa;
+    }
+
+    button {
+      margin: 0.4rem;
+      padding: 0.6rem 1.2rem;
+      border: 2px solid #00ff99;
+      border-radius: 6px;
+      background: #111;
+      color: #00ff99;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background: #00ff99;
+      color: #111;
+      box-shadow: 0 0 12px #00ff99;
+    }
+
+    /* Mascot */
+    .mascot {
+      max-width: 150px;
+      margin-top: 1rem;
+      filter: drop-shadow(0 0 12px #00ff99);
+      border-radius: 10px;
+    }
+
+    /* Sound panel */
+    .panel {
+      margin-top: 1.5rem;
+      padding: 1rem;
+      border: 1px dashed #00ff99;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    /* ===== Neon Footer ===== */
+    .footer-neon {
+      margin-top: auto;
+      background: rgba(0, 0, 0, 0.85);
+      border-top: 2px solid #00ff99;
+      box-shadow: 0 -2px 12px #00ff99;
+    }
+
+    .footer-neon p,
+    .footer-neon a {
+      color: #00ff99;
+      text-shadow: 0 0 6px #00ff99;
+    }
+
+    .footer-neon a:hover {
+      color: #ffffff;
+      text-shadow: 0 0 12px #00ff99, 0 0 20px #00ff99;
+    }
+    
+
+    /* Dedication heading */
+.dedication {
+  text-align: center;
+  margin: 1rem auto 0;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: clamp(1.4rem, 2.2vw + 1rem, 2.4rem);
+  color: #eee;                      /* base text */
+  letter-spacing: .5px;
+  text-shadow: 0 0 8px #00ff9922;   /* subtle glow for the non-animated text */
+}
+
+/* Names: animated neon gradient text */
+.kid-name {
+  font-weight: 700;
+  display: inline-block;
+  background: linear-gradient(90deg, #ff0080, #ff9900, #00e1ff, #9dff00, #ff0080);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;               /* reveal the gradient */
+  text-shadow: none;                /* crisp gradient edges */
+  animation: shimmer 6s linear infinite;
+}
+
+/* Give each name a slightly different rhythm */
+.kid-name.ali { animation-duration: 5.5s; }
+.kid-name.arai { animation-duration: 6.5s; animation-direction: reverse; }
+
+@keyframes shimmer {
+  0%   { background-position:   0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position:   0% 50%; }
+}
+
+/* Optional: gentle glow pulse around the words */
+.kid-name::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.kid-name {
+  position: relative;
+  filter: drop-shadow(0 0 6px rgba(255, 153, 0, 0.4));
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .kid-name { animation: none; background-size: 100% 100%; }
+}
+
+

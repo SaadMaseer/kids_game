@@ -1,0 +1,128 @@
+/* Game container */
+.game_2 {
+  background: rgba(0, 0, 0, 0.85);
+  border: 2px solid #ff9900;
+  border-radius: 14px;
+  padding: 2rem;
+  box-shadow: 0 0 22px #ff9900;
+  max-width: 550px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Title */
+.game_2 h1 {
+  color: #ff9900;
+  text-shadow: 0 0 12px #ff9900;
+  margin-bottom: 1rem;
+}
+
+/* Buttons (options) */
+.btn-option {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  border: 2px solid #ff9900;
+  border-radius: 8px;
+  background: #111;
+  color: #ff9900;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.btn-option:hover {
+  background: #ff9900;
+  color: #111;
+  box-shadow: 0 0 12px #ff9900;
+}
+.btn-option.correct {
+  background: #28a745;
+  border-color: #28a745;
+  color: #fff;
+}
+.btn-option.wrong {
+  background: #dc3545;
+  border-color: #dc3545;
+  color: #fff;
+}
+
+/* Result / Score */
+#result_2 {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  min-height: 2rem;
+  color: #ff9900;
+  text-shadow: 0 0 8px #ff9900;
+}
+
+/* Start/Next button styled same as options */
+#startBtn_2 {
+  margin-top: 1rem;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.1rem;
+  border: 2px solid #ff9900;
+  border-radius: 8px;
+  background: #111;
+  color: #ff9900;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#startBtn_2:hover {
+  background: #ff9900;
+  color: #111;
+  box-shadow: 0 0 12px #ff9900;
+}
+
+/* Mascot image (win/lose) */
+#mascot_2 {
+  width: 120px;
+  margin-top: 1rem;
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Dancing animation */
+@keyframes dance {
+  0% { transform: rotate(0deg) scale(1); }
+  25% { transform: rotate(-15deg) scale(1.05); }
+  50% { transform: rotate(15deg) scale(1.1); }
+  75% { transform: rotate(-10deg) scale(1.05); }
+  100% { transform: rotate(0deg) scale(1); }
+}
+.dance {
+  animation: dance 1.5s ease-in-out;
+}
+
+.panel {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  border: 1px solid #ff9900;
+  border-radius: 8px;
+  background: rgba(17, 17, 17, 0.85);
+  color: #ff9900;
+  text-shadow: 0 0 6px #ff9900;
+  box-shadow: 0 0 8px #ff9900;
+}
+
+#muteBtn_2 {
+  border: 2px solid #ff9900;
+  border-radius: 6px;
+  background: #111;
+  color: #ff9900;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#muteBtn_2:hover {
+  background: #ff9900;
+  color: #111;
+  box-shadow: 0 0 8px #ff9900;
+}
+
+#volRange_2 {
+  accent-color: #ff9900; /* neon orange slider */
+}
+
